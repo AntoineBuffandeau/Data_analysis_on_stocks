@@ -1,4 +1,3 @@
-%\title{Title page with logo}
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
@@ -99,18 +98,18 @@
 \textsc{\LARGE Ecole Supérieure d'Ingénieurs Léonard-de-Vinci}\\[1cm]
 \includegraphics[scale=.4]{logo_esilv.png}\\[1cm]
 \textsc{\Large Innovation In Finance}\\[0.5cm]
-\textsc{\large }\\[0.5cm]
+\textsc{\large Bonus Exercice 1}\\[0.5cm]
 %----------------------------------------------------------------------------------------
 %	TITLE SECTION
 %----------------------------------------------------------------------------------------
 \HRule \\[0.4cm]
-{ \huge \bfseries Analysis on CAC40 stocks Network}\\[0.4cm]
+{ \huge \bfseries Network analysis of CAC40 stocks}\\[0.4cm]
 \HRule \\[0.5cm]
-%\includegraphics[scale=0.5]{.png}\\[1cm]
+\includegraphics[scale=0.5]{network_stock_page_de_garde.png}\\
 %----------------------------------------------------------------------------------------
 %	AUTHOR SECTION
 %----------------------------------------------------------------------------------------
-\Large \emph{Auteurs:}\\
+\Large \emph{Authors:}\\
 Antoine \textsc{Buffandeau}\\
 Charles \textsc{François}\\
 Mathieu \textsc{Gourmelen}\\
@@ -124,8 +123,17 @@ Mathieu \textsc{Gourmelen}\\
 \vfill
 \end{titlepage}
 %----------------------------------------------------------------------------------------
-%	ABSTRACT SECTION
+%	INTRODUCTION SECTION
 %----------------------------------------------------------------------------------------
+\hypertarget{sec:part1}{}
+\section{Introduction}
+This report explores the structure of a stock correlation network created from a dataset of stock relationships. The dataset provides pairwise correlations between stocks, which are used to construct a network with connections based on specific correlation thresholds (0.3, 0.5, and 0.7). By applying network science techniques, the study investigates connectivity, community structures, core-periphery roles, and compares with two reference models: Erdős–Rényi and Barabási–Albert.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=\textwidth]{close_price_index_cac40_stocks.png}
+  \caption{Daily closing prices of CAC 40 index stocks}
+  \label{fig:stock_close_price}
+\end{figure}
 %----------------------------------------------------------------------------------------
 %	TABLE OF CONTENTS SECTION
 %----------------------------------------------------------------------------------------
@@ -134,9 +142,95 @@ Mathieu \textsc{Gourmelen}\\
 %----------------------------------------------------------------------------------------
 %	SECTION 1 
 %----------------------------------------------------------------------------------------
-\hypertarget{sec:part1}{}
-\section{Partie I : }
+\section{Dataset and Threshold-Based Network Construction}
+The stock dataset contains correlation values between stock pairs, where each correlation reflects the strength of their relationship. Three networks were created based on thresholds (0.3, 0.5, and 0.7). These thresholds filter the connections, with lower thresholds allowing weaker correlations and resulting in denser networks, while higher thresholds retain only strong correlations, yielding sparser networks.
+\begin{figure}[h!]
+  \centering
+  \begin{minipage}[b]{0.32\textwidth}
+      \includegraphics[width=\textwidth]{2D_network_stock_corr3.png}
+      \caption{Threshold 0.3}
+      \label{fig:threshold03}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.32\textwidth}
+      \includegraphics[width=\textwidth]{2D_network_stock_corr5.png}
+      \caption{Threshold 0.5}
+      \label{fig:threshold05}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.32\textwidth}
+      \includegraphics[width=\textwidth]{2D_network_stock_corr7.png}
+      \caption{Threshold 0.7}
+      \label{fig:threshold07}
+  \end{minipage}
+  %\caption{Network of Stock Correlations at Different Thresholds}
+  \label{fig:stock_networks}
+\end{figure}
 
+\section{Step-by-Step Analysis}
+
+\subsection{Step 1: Network Metrics}
+Key metrics including average degree, density, transitivity, and assortativity were calculated for each thresholded network:
+\begin{itemize}
+    \item \textbf{Average Degree} decreases with increasing thresholds, indicating fewer connections as weaker correlations are removed.
+    \item \textbf{Density} drops significantly from 0.8092 at 0.3 to 0.0138 at 0.7, confirming that the network becomes sparser.
+    \item \textbf{Transitivity} shows high clustering at lower thresholds, remaining elevated at 0.3 but diminishing at 0.5 and 0.7.
+    \item \textbf{Assortativity} is negative at lower thresholds, indicating a hub-like structure, and turns positive at 0.7, suggesting that remaining connections form among degree-similar nodes.
+\end{itemize}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        Threshold & Avg Degree & Density & Transitivity & Assortativity \\
+        \hline
+        0.3 & 23.47 & 0.8092 & 0.8957 & -0.1183 \\
+        0.5 & 8.73 & 0.3011 & 0.6573 & -0.1053 \\
+        0.7 & 0.4 & 0.0138 & 0.7500 & 0.2500 \\
+        \hline
+    \end{tabular}
+    \caption{Network Metrics at Different Thresholds.}
+\end{table}
+
+\subsection{Step 2: Centrality Measures}
+Four centrality metrics (degree, closeness, betweenness, eigenvector centrality) were calculated to identify influential stocks within each network. The results show that centrality is concentrated in fewer nodes at higher thresholds, indicating that only highly correlated stocks remain central in sparser networks.
+
+\subsection{Step 3: Comparison with Network Models}
+The constructed stock networks were compared to Erdős–Rényi and Barabási–Albert models:
+\begin{itemize}
+    \item \textbf{Erdős–Rényi Model} displayed low clustering and random connections, lacking the structural properties of the stock network.
+    \item \textbf{Barabási–Albert Model} created a hub structure, forming a few highly connected nodes. While closer to the stock network, it did not fully capture the clustering observed in the data.
+\end{itemize}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        Model & Threshold & Transitivity & Assortativity \\
+        \hline
+        Stock Network & 0.3 & 0.8957 & -0.1183 \\
+        Erdős–Rényi & 0.3 & 0.7970 & -0.0899 \\
+        Barabási–Albert & 0.3 & 0.5488 & -0.3182 \\
+        Stock Network & 0.7 & 0.7500 & 0.2500 \\
+        Erdős–Rényi & 0.7 & 0.0000 & -0.5000 \\
+        Barabási–Albert & 0.7 & 0.0000 & -0.3443 \\
+        \hline
+    \end{tabular}
+    \caption{Comparison of Network Transitivity and Assortativity.}
+\end{table}
+
+\subsection{Step 4: Community Detection (Louvain Method)}
+The Louvain method was applied to detect communities within each thresholded network. At lower thresholds, stocks naturally formed larger, densely connected communities, likely reflecting sector-based groupings or interrelated stocks. Modularity, which measures the strength of community division, was highest at threshold 0.3, indicating well-defined clusters.
+
+\subsection{Step 5: Core-Periphery Analysis}
+Using k-core decomposition, core-periphery structure was analyzed for each threshold:
+\begin{itemize}
+    \item \textbf{Core Stocks}: At threshold 0.3, multiple stocks formed the core, indicating strong interconnectedness within the network.
+    \item \textbf{Periphery Stocks}: At threshold 0.7, only a small core remained, with most stocks in the periphery, showing a distinct separation between central and isolated stocks.
+\end{itemize}
+
+\section{Conclusion}
+This network analysis reveals that the stock network differs significantly from random and scale-free models, exhibiting unique clustering, centrality, and core-periphery structures. As thresholds increase, connectivity decreases, isolating clusters of highly correlated stocks and leaving only a few central nodes. The results highlight the stock network’s natural clustering and centrality patterns, which suggest inherent relationships that might align with sectors or market dynamics.
 %----------------------------------------------------------------------------------------
 %	PART REFERENCES
 %---------------------------------------------------------------------------------------
