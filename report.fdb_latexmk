@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1729959249.3028 "c:/Users/Antoine Buffandeau/Desktop/A5_Courses/Semestre_1_A5_2024/Innovation In Finance/Data_analysis_on_stocks/report.tex" "report.pdf" "report" 1729959250.51171 0
+["pdflatex"] 1729959453.50674 "c:/Users/Antoine Buffandeau/Desktop/A5_Courses/Semestre_1_A5_2024/Innovation In Finance/Data_analysis_on_stocks/report.tex" "report.pdf" "report" 1729959454.67906 0
   "C:/Users/Antoine Buffandeau/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1729959183 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Antoine Buffandeau/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1709462056 24231217 4124ab3e0fcd402a64ebdc1bd218cc4c ""
   "C:/Users/Antoine Buffandeau/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx12.tfm" 1136765053 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -161,12 +161,12 @@
   "C:/Users/Antoine Buffandeau/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Antoine Buffandeau/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/Antoine Buffandeau/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "c:/Users/Antoine Buffandeau/Desktop/A5_Courses/Semestre_1_A5_2024/Innovation In Finance/Data_analysis_on_stocks/report.tex" 1729959168 5643 15a03c685e0a580a39c249e21bb5da34 ""
+  "c:/Users/Antoine Buffandeau/Desktop/A5_Courses/Semestre_1_A5_2024/Innovation In Finance/Data_analysis_on_stocks/report.tex" 1729959453 5664 57b1da97207e2403444245228d118a3c ""
   "logo_esilv.png" 1726126529 51065 14445bd34ce42be8a31750d4318bef9f ""
-  "report.aux" 1729959250 365 d8ff8672f1845e1602e0f07e67896eb7 "pdflatex"
-  "report.out" 1729959250 107 26d1e0d783c697a74bbe7656670cb99a "pdflatex"
-  "report.tex" 1729959168 5643 15a03c685e0a580a39c249e21bb5da34 ""
-  "report.toc" 1729959250 114 23805f1f4484dd2504e33cb403bf4bd0 "pdflatex"
+  "report.aux" 1729959454 365 d8ff8672f1845e1602e0f07e67896eb7 "pdflatex"
+  "report.out" 1729959454 107 26d1e0d783c697a74bbe7656670cb99a "pdflatex"
+  "report.tex" 1729959453 5664 57b1da97207e2403444245228d118a3c ""
+  "report.toc" 1729959454 114 23805f1f4484dd2504e33cb403bf4bd0 "pdflatex"
   (generated)
   "report.aux"
   "report.log"
