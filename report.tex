@@ -1,0 +1,150 @@
+%\title{Title page with logo}
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[12pt]{article}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{url}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{hyperref}
+\usepackage[numbers]{natbib}
+\usepackage{titletoc}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{geometry}
+\usepackage{tikz}
+\usepackage{array}
+\usetikzlibrary{positioning}
+\geometry{
+    a4paper,
+    total={170mm,257mm},
+    left=20mm,
+    right=20mm,
+    top=20mm,
+    bottom=20mm,
+}
+
+\tcbset{
+  mydefinition/.style={
+    colback=violet!10,    % Couleur de fond
+    colframe=violet,      % Couleur du cadre
+    fonttitle=\bfseries,  % Style du titre
+    coltitle=white,       % Couleur du titre
+    boxrule=1mm,          % Épaisseur du cadre
+    width=\textwidth,     % Largeur de la boîte
+    sharp corners,        % Angles droits
+    left=1mm, right=1mm,  % Marges internes
+    top=1mm, bottom=1mm,  % Marges internes
+  }
+}
+
+% Configuration des couleurs
+\definecolor{codegreen}{rgb}{0,0.5,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{textcolor}{rgb}{0.33,0.33,0.33}
+
+% Configuration de lstlisting
+\lstset{
+  backgroundcolor=\color{backcolour},
+  commentstyle=\color{codegreen},
+  keywordstyle=\color{magenta},
+  numberstyle=\tiny\color{codegray},
+  stringstyle=\color{codepurple},
+  basicstyle=\footnotesize\color{textcolor},
+  breakatwhitespace=false,
+  breaklines=true,
+  captionpos=b,
+  keepspaces=true,
+  numbers=left,
+  numbersep=5pt,
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  tabsize=2
+}
+\newcommand{\subsubsubsectionbreak}{\par\addvspace{3.25ex plus 1ex minus .2ex}}
+% Définition de la commande \touche
+\newcommand{\touche}[1]{%
+    \begin{tikzpicture}
+        \pgfmathsetlengthmacro{\toucheboxwidth}{width("#1")+5pt} % Largeur de la boîte
+        \draw[rounded corners=2pt, fill=black] (0,0) rectangle (\toucheboxwidth,0.5);
+        \draw[rounded corners=1pt, fill=white] (0.05,0.05) rectangle (\toucheboxwidth-0.05,0.45);
+        \node at (\toucheboxwidth/2,0.25) {#1};
+    \end{tikzpicture}%
+}
+\newcommand{\toucheplus}{%
+    \begin{tikzpicture}
+        %\draw[rounded corners=2pt, fill=black] (0,0) rectangle (0.5,0.5);
+        %\draw[rounded corners=1pt, fill=white] (0.05,0.05) rectangle (0.45,0.45);
+        \node at (0.2,0.2) {+};
+    \end{tikzpicture}%
+}
+
+\begin{document}
+\begin{titlepage}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+\center % Center everything on the page
+
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+\textsc{\LARGE Ecole Supérieure d'Ingénieurs Léonard-de-Vinci}\\[1cm]
+\includegraphics[scale=.4]{logo_esilv.png}\\[1cm]
+\textsc{\Large Exercice de rédaction}\\[0.5cm]
+\textsc{\large }\\[0.5cm]
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+\HRule \\[0.4cm]
+{ \huge \bfseries Marche Aléatoire}\\[0.4cm]
+\HRule \\[0.5cm]
+%\includegraphics[scale=0.5]{.png}\\[1cm]
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+\Large \emph{Auteurs:}\\
+Antoine \textsc{Buffandeau}\\
+Titouan \textsc{Chevasus}\\
+Cédric \textsc{Chi}\\
+%\Large \emph{Supervisors:}\\
+ \textsc{}
+\\[1cm]
+%----------------------------------------------------------------------------------------
+%	DATE SECTION
+%----------------------------------------------------------------------------------------
+{\large \today} % Date, change the \today to a set date if you want to be precise
+\vfill
+\end{titlepage}
+%----------------------------------------------------------------------------------------
+%	ABSTRACT SECTION
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS SECTION
+%----------------------------------------------------------------------------------------
+\tableofcontents
+\clearpage
+%----------------------------------------------------------------------------------------
+%	SECTION 1 
+%----------------------------------------------------------------------------------------
+\hypertarget{sec:part1}{}
+\section{Partie I : }
+
+%----------------------------------------------------------------------------------------
+%	PART REFERENCES
+%---------------------------------------------------------------------------------------
+%\part{Références}
+%\cite{EBA_website}
+%\bibliographystyle{IEEEtran}
+%\bibliography{ref_RS.bib}
+%----------------------------------------------------------------------------------------
+%	ENDING SECTION
+%----------------------------------------------------------------------------------------
+\end{document}
