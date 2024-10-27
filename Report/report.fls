@@ -1,6 +1,6 @@
-PWD c:\Users\Antoine Buffandeau\Desktop\A5_Courses\Semestre_1_A5_2024\Innovation In Finance\Data_analysis_on_stocks
+PWD c:\Users\Antoine Buffandeau\Desktop\A5_Courses\Semestre_1_A5_2024\Innovation In Finance\Data_analysis_on_stocks\Report
 INPUT C:\Users\Antoine Buffandeau\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\Antoine Buffandeau\Desktop\A5_Courses\Semestre_1_A5_2024\Innovation In Finance\Data_analysis_on_stocks\report.tex
+INPUT c:\Users\Antoine Buffandeau\Desktop\A5_Courses\Semestre_1_A5_2024\Innovation In Finance\Data_analysis_on_stocks\Report\report.tex
 OUTPUT report.log
 INPUT C:\Users\Antoine Buffandeau\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\Antoine Buffandeau\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls

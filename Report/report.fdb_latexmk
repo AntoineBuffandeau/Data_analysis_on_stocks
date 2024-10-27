@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1730058454.99337 "c:/Users/Antoine Buffandeau/Desktop/A5_Courses/Semestre_1_A5_2024/Innovation In Finance/Data_analysis_on_stocks/report.tex" "report.pdf" "report" 1730058456.70554 0
+["pdflatex"] 1730063560.76357 "c:/Users/Antoine Buffandeau/Desktop/A5_Courses/Semestre_1_A5_2024/Innovation In Finance/Data_analysis_on_stocks/Report/report.tex" "report.pdf" "report" 1730063563.70427 0
   "2D_network_stock_corr3.png" 1729983205 192386 feecaf62315a0eaea076c0c73cf189cd ""
   "2D_network_stock_corr5.png" 1729983231 54158 d4b510b65dd54b5274860817413d6a50 ""
   "2D_network_stock_corr7.png" 1729983245 50480 91d03ec7328879ad24729c19b0acc3f2 ""
@@ -180,7 +180,7 @@
   "C:/Users/Antoine Buffandeau/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Antoine Buffandeau/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/Antoine Buffandeau/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "c:/Users/Antoine Buffandeau/Desktop/A5_Courses/Semestre_1_A5_2024/Innovation In Finance/Data_analysis_on_stocks/report.tex" 1730058454 17134 d82d9065af5a5a915075adcd71146c2f ""
+  "c:/Users/Antoine Buffandeau/Desktop/A5_Courses/Semestre_1_A5_2024/Innovation In Finance/Data_analysis_on_stocks/Report/report.tex" 1730058454 17134 d82d9065af5a5a915075adcd71146c2f ""
   "close_price_index_cac40_stocks.png" 1729983872 246859 a1275b471671f7bbf9bf5668f4ba2f86 ""
   "degree_cluster_coeff_network_stock_corr3.png" 1730056917 32399 763a3a9ee31a77e9a2ea51c2bbec6186 ""
   "degree_cluster_coeff_network_stock_corr7.png" 1730056944 24444 db1870380f65df29d39baf0483d2042a ""
@@ -188,10 +188,10 @@
   "louvain_network_stock_corr3.png" 1730057202 118631 ae7884156fd71ca71b368b76217c819a ""
   "louvain_network_stock_corr7.png" 1730057218 17343 32e954b7d891878a5d77ccf9d39f50bc ""
   "network_stock_page_de_garde.png" 1729982831 84883 f4a924f6d0c574cfcc8ec2e0a680311a ""
-  "report.aux" 1730058456 3917 6aad4ab18b6333cc6e3c325006acfaf8 "pdflatex"
-  "report.out" 1730058456 1977 3dc1a5f090798fb49071f527e3ff7359 "pdflatex"
+  "report.aux" 1730063563 3917 6aad4ab18b6333cc6e3c325006acfaf8 "pdflatex"
+  "report.out" 1730063563 1977 3dc1a5f090798fb49071f527e3ff7359 "pdflatex"
   "report.tex" 1730058454 17134 d82d9065af5a5a915075adcd71146c2f ""
-  "report.toc" 1730058456 936 143f2efb22504b206ab2c42b0cbbba2a "pdflatex"
+  "report.toc" 1730063563 936 143f2efb22504b206ab2c42b0cbbba2a "pdflatex"
   (generated)
   "report.aux"
   "report.log"
