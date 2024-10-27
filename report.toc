@@ -1,11 +1,11 @@
 \babel@toc {english}{}\relax 
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
-\contentsline {section}{\numberline {2}Dataset and Threshold-Based Network Construction}{2}{section.2}%
+\contentsline {section}{\numberline {2}Dataset and Threshold-Based Network Construction}{1}{section.2}%
 \contentsline {section}{\numberline {3}Step-by-Step Analysis}{2}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Step 1: Network Metrics}{2}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Step 2: Centrality Measures}{2}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.2}Step 2: Centrality Measures}{3}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Step 3: Comparison with Network Models}{3}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Step 4: Community Detection (Louvain Method)}{3}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Step 5: Core-Periphery Analysis}{3}{subsection.3.5}%
-\contentsline {section}{\numberline {4}Conclusion}{3}{section.4}%
+\contentsline {subsection}{\numberline {3.4}Step 4: Community Detection (Louvain Method)}{4}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Step 5: Core-Periphery Analysis}{4}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Conclusion}{4}{section.4}%
 \contentsfinish 
