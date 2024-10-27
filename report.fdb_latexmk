@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1730055558.40033 "c:/Users/Antoine Buffandeau/Desktop/A5_Courses/Semestre_1_A5_2024/Innovation In Finance/Data_analysis_on_stocks/report.tex" "report.pdf" "report" 1730055559.98228 0
+["pdflatex"] 1730057324.30774 "c:/Users/Antoine Buffandeau/Desktop/A5_Courses/Semestre_1_A5_2024/Innovation In Finance/Data_analysis_on_stocks/report.tex" "report.pdf" "report" 1730057326.08065 0
   "2D_network_stock_corr3.png" 1729983205 192386 feecaf62315a0eaea076c0c73cf189cd ""
   "2D_network_stock_corr5.png" 1729983231 54158 d4b510b65dd54b5274860817413d6a50 ""
   "2D_network_stock_corr7.png" 1729983245 50480 91d03ec7328879ad24729c19b0acc3f2 ""
@@ -180,14 +180,18 @@
   "C:/Users/Antoine Buffandeau/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Antoine Buffandeau/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/Antoine Buffandeau/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "c:/Users/Antoine Buffandeau/Desktop/A5_Courses/Semestre_1_A5_2024/Innovation In Finance/Data_analysis_on_stocks/report.tex" 1730055557 15122 1c7b524d1d837b4e763154caa55384ab ""
+  "c:/Users/Antoine Buffandeau/Desktop/A5_Courses/Semestre_1_A5_2024/Innovation In Finance/Data_analysis_on_stocks/report.tex" 1730057321 16363 00ada0928f517d26fa51f8a09c80401a ""
   "close_price_index_cac40_stocks.png" 1729983872 246859 a1275b471671f7bbf9bf5668f4ba2f86 ""
+  "degree_cluster_coeff_network_stock_corr3.png" 1730056917 32399 763a3a9ee31a77e9a2ea51c2bbec6186 ""
+  "degree_cluster_coeff_network_stock_corr7.png" 1730056944 24444 db1870380f65df29d39baf0483d2042a ""
   "logo_esilv.png" 1726126529 51065 14445bd34ce42be8a31750d4318bef9f ""
+  "louvain_network_stock_corr3.png" 1730057202 118631 ae7884156fd71ca71b368b76217c819a ""
+  "louvain_network_stock_corr7.png" 1730057218 17343 32e954b7d891878a5d77ccf9d39f50bc ""
   "network_stock_page_de_garde.png" 1729982831 84883 f4a924f6d0c574cfcc8ec2e0a680311a ""
-  "report.aux" 1730055559 2896 fd6bcd601ea1500108cffc916c1d2e58 "pdflatex"
-  "report.out" 1730055559 1805 72793d165bf8ad88b07437553e468e5d "pdflatex"
-  "report.tex" 1730055557 15122 1c7b524d1d837b4e763154caa55384ab ""
-  "report.toc" 1730055559 855 c36cd7f9f39ab4d0f700dbda255c4d3b "pdflatex"
+  "report.aux" 1730057325 3795 5ba49d3ea9f83150911184a09f8a760e "pdflatex"
+  "report.out" 1730057325 1805 72793d165bf8ad88b07437553e468e5d "pdflatex"
+  "report.tex" 1730057321 16363 00ada0928f517d26fa51f8a09c80401a ""
+  "report.toc" 1730057325 855 866c1b002c57e898cdeaf05dd7a85a8f "pdflatex"
   (generated)
   "report.aux"
   "report.log"

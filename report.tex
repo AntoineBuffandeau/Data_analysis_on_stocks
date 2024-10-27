@@ -180,6 +180,18 @@ Key metrics including average degree, density, transitivity, and assortativity w
 
 \begin{itemize}
     \item \textbf{The Average Degree}, that is to say the average number of connections (edges) per node (stock) in the network, it reflects the typical number of direct relationships each stock has with others in the network. In our case, the average degree decreases with increasing thresholds, indicating fewer connections as weaker correlations are removed.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=\textwidth]{degree_cluster_coeff_network_stock_corr3.png}
+        %\caption{Degree and Clustering Coefficient Histograms for Threshold = 0.3}
+        \label{fig:degree_clustering_03}
+    \end{figure}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=\textwidth]{degree_cluster_coeff_network_stock_corr7.png}
+        %\caption{Degree and Clustering Coefficient Histograms for Threshold = 0.7}
+        \label{fig:degree_clustering_07}
+    \end{figure}
     \item \textbf{The Density} measures the proportion of potential connections in the network that are actual connections. High density indicates a closely knit network, where many possible pairs of stocks are directly connected.  Here, the density drops significantly from 0.8092 at 0.3 to 0.0138 at 0.7, confirming that the network becomes sparser.
     \item \textbf{The Transitivity} reflects the likelihood that the neighbors (connected nodes) of a node are also connected to each other. A high transitivity indicates that the network has many tightly knit groups or clusters. In our study, the transitivity reveals high clustering at lower thresholds, remaining elevated at 0.3 but diminishing at 0.5 and 0.7.
     \item \textbf{The Assortativity} generally indicates the tendency of nodes to connect with other nodes that are similar in some way, in this case, degree. Positive assortativity suggests that stocks tend to connect with others that have a similar number of connections, whereas negative assortativity indicates that stocks tend to connect with others that have different numbers of connections. Here, we have a negative assortativity at lower thresholds, indicating a hub-like structure, and turns positive at 0.7, suggesting that remaining connections form among degree-similar nodes.
@@ -242,7 +254,24 @@ The constructed stock networks were compared to Erdős-Rényi and Barabási-Albe
 
 \subsection{Step 4: Community Detection (Louvain Method)}
 The Louvain method was applied to detect communities within each thresholded network. At lower thresholds, stocks naturally formed larger, densely connected communities, likely reflecting sector-based groupings or interrelated stocks. Modularity, which measures the strength of community division, was highest at threshold 0.3, indicating well-defined clusters.
-
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{louvain_network_stock_corr3.png}
+        %\caption{Community Structure - Louvain (Threshold 0.3)}
+        \label{fig:louvain_03}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{louvain_network_stock_corr7.png}
+        %\caption{Community Structure - Louvain (Threshold 0.7)}
+        \label{fig:louvain_07}
+    \end{minipage}
+    \caption{Comparison of Community Structures at Thresholds 0.3 and 0.7}
+    \label{fig:community_structures}
+\end{figure}
 \subsection{Step 5: Core-Periphery Analysis}
 Using k-core decomposition, core-periphery structure was analyzed for each threshold:
 \begin{itemize}
